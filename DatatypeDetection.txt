@@ -1,0 +1,32 @@
+SimpleDateFormat dateFmt = new SimpleDateFormat("mm/dd/yyyy");
+Class[] dataTypes = new Class[] {String.class, Date.class, double.class, short.class};
+EmsStudent s = new EmsStudent();
+         
+        if(dataRow != null) {
+            String[] data = dataRow.split(",");
+             
+            for(int x = 0; x < headers.length; x++) {
+                String d = data[x];
+                Method meth;
+                 
+                for(Class<?> clazz : dataTypes) {
+                    try {
+                        meth = s.getClass().getMethod("set"+headers[x],new Class[]{clazz});
+                         
+                        if(clazz.equals(String.class)) {
+                            meth.invoke(s,new Object[]{d});
+                        } else if(clazz.equals(double.class)) {
+                            meth.invoke(s,new Object[]{Double.valueOf(d)});
+                        } else if(clazz.equals(short.class)) {
+                            meth.invoke(s,new Object[]{Short.valueOf(d)});
+                        } else if(clazz.equals(Date.class)) {
+                            meth.invoke(s,new Object[]{dateFmt.parse(d)});
+                        }
+                         
+                        break;
+                    } catch(Exception e) {
+                        System.out.println(headers[x]+" = "+d);
+                    }
+                }
+            }
+        }

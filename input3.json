@@ -1,0 +1,37 @@
+[ {
+  "rep_file_num" : "814-00034",
+  "CIK" : "731812",
+  "entity_name" : "SIERRA RESOURCES CORP",
+  "street1" : "629 J STREET",
+  "street2" : "SUITE 202",
+  "city" : "SACRAMENTO",
+  "state_code" : "CA",
+  "zip" : "95814",
+  "filing_date" : "12/30/96",
+  "doc_type_code " : "15",
+  "extra" : 1
+}, {
+  "rep_file_num" : "814-00053",
+  "CIK" : "821472",
+  "entity_name" : "WESTFORD TECHNOLOGY VENTURES LP",
+  "street1" : "17 ACADEMY ST 5TH FLOOR",
+  "street2" : "[NULL]",
+  "city" : "NEWARK",
+  "state_code" : "NJ",
+  "zip" : "07102-2905",
+  "filing_date" : "01/28/04",
+  "doc_type_code " : "NO ACT ... ",
+  "extra" : 2
+}, {
+  "rep_file_num" : "814-00098",
+  "CIK" : "878932",
+  "entity_name" : "EQUUS TOTAL RETURN, INC.",
+  "street1" : "EIGHT GREENWAY PLAZA",
+  "street2" : "SUITE 930",
+  "city" : "HOUSTON",
+  "state_code" : "TX",
+  "zip" : "77046",
+  "filing_date" : "08/25/16",
+  "doc_type_code " : "40-APP/A",
+  "extra" : 3
+} ]
